@@ -4,6 +4,7 @@
 :root {
 	--dark-color-a: #1f2a44;
 	--dark-color-b: #36384d;
+	--dark-color-c: #31334e;
 	--dark-color: #27262b;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
@@ -19,7 +20,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	background: var(--dark-color);
-	margin: 20px;
 }
 
 ul {
@@ -28,6 +28,17 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+header {
+	margin: 0 !important;
+	padding: 10px 20px;
+	background: var(--dark-color-c);
+	color: #f1f1f1;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .btn {
@@ -65,17 +76,15 @@ footer {
 	background: var(--dark-color-a);
 	color: #fff;
 	padding: 15px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	text-align: center;
 }
 
-.chat-header .btn {
+header .btn {
 	border-radius: 8px;
 	transition: 300ms all ease-in-out;
 }
 
-.chat-header .btn:hover {
+header .btn:hover {
 	-webkit-box-shadow: 0px 0px 25px -5px #FFFFFF; 
 	box-shadow: 0px 0px 15px -5px #FFFFFF;
 	transform: scale(1.05);
