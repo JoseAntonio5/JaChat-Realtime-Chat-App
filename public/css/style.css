@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
 	--dark-color-a: #1f2a44;
@@ -22,7 +23,7 @@ body {
 }
 
 ul {
-	list-style: none;
+	padding-left: 10px;
 }
 
 a {
@@ -36,6 +37,19 @@ a {
 	color: var(--dark-color-a);
 	border: 0;
 	font-size: 17px;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: var(--dark-color-a);
+	color: #fff;
+	font-size: 1.1rem;
+	text-align: center;
 }
 
 /* Chat Page */
@@ -68,6 +82,7 @@ a {
 }
 
 .chat-main {
+	min-height: 500px;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
@@ -79,15 +94,15 @@ a {
 	overflow-y: scroll;
 }
 
-.chat-sidebar h2 {
-	font-size: 20px;
-	background: rgba(0, 0, 0, 0.1);
-	padding: 10px;
-	margin-bottom: 20px;
+.chat-sidebar h3 {
+	text-align: center;
+	margin-bottom: 5px;
 }
 
-.chat-sidebar h3 {
-	margin-bottom: 15px;
+.chat-sidebar p {
+	text-align: center;
+	font-size: 0.8rem;
+	color: #a1a1a1;
 }
 
 .chat-sidebar ul li {
@@ -147,8 +162,8 @@ a {
 }
 
 .join-header {
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
-	padding: 20px;
 	background: var(--dark-color-a);
 	border-top-right-radius: 18px;
 }
@@ -177,6 +192,8 @@ a {
 	padding: 5px;
 	height: 40px;
 	width: 100%;
+	border: none;
+	border-radius: 8px;
 }
 
 .join-main select {
@@ -184,11 +201,36 @@ a {
 	padding: 5px;
 	height: 40px;
 	width: 100%;
+	border: none;
+	border-radius: 8px;
 }
 
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
+}
+
+.btn-join {
+	font-size: 1.2rem;
+	border-radius: 8px;
+	transition: 300ms all ease-in-out;
+}
+
+.btn-join:hover {
+	-webkit-box-shadow: 0px 0px 10px -5px #FFFFFF; 
+	box-shadow: 0px 0px 10px -5px #FFFFFF;
+	transform: scale(1.02);
+}
+
+.btn-send {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	transition: 250ms all ease-in-out;
+}
+
+.btn-send:hover {
+	-webkit-box-shadow: 0px 0px 10px -5px #FFFFFF; 
+	box-shadow: 0px 0px 10px -5px #FFFFFF;
 }
 
 @media (max-width: 700px) {
