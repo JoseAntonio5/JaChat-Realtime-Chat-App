@@ -1,7 +1,7 @@
 # JaChat Realtime Chat App 💬
 
 ##  About The Project 📖
-This project is a real time chat application created using Socket.IO that is an amazing javascript library that enables real-time, bi-directional communication between web clients and servers. I used [Node.js](https://nodejs.org/en/) and [Express](https://expressjs.com/) to create a webserver and handle the socketIO logic, and HTML, CSS and JavaScript to show the output on the user screen.
+This project is a real time chat application created using Socket.IO, which is an amazing library that enables real-time, bi-directional communication between web clients and servers. I used [Node.js](https://nodejs.org/en/) and [Express](https://expressjs.com/) to create a webserver and handle the socketIO logic, and HTML, CSS and JavaScript to show the output on the user screen.
 
 > Enter a username and select room to join a chat
 ![](public/imgs/img1.png)
